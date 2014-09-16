@@ -2,6 +2,7 @@ public class SimulatedCoffeeMaker implements CoffeeMakerAPI {
 
     private int warmerPlateStatus;
     private int boilerStatus;
+    private int boilerState;
     private int brewButtonStatus;
     private int warmerState;
     private int indicatorState;
@@ -43,12 +44,12 @@ public class SimulatedCoffeeMaker implements CoffeeMakerAPI {
     @Override
     public void setBoilerState(int boilerState)
     {
-        this.boilerStatus = boilerState;
+        this.boilerState = boilerState;
     }
 
     public int getBoilerState()
     {
-        return this.boilerStatus;
+        return this.boilerState;
     }
 
     @Override
