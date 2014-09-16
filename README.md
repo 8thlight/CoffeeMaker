@@ -10,11 +10,13 @@ Directions...
 2. Implement a coffee maker
 
 To Run:
+
 mvn package
 
 java -cp target/CoffeeMaker-1.0-SNAPSHOT.jar Mark4CoffeeMaker
 
 To Test:
+
 mvn test
 
 Use Cases
