@@ -11,6 +11,7 @@ Directions...
 
 To Run:
 mvn package
+
 java -cp target/CoffeeMaker-1.0-SNAPSHOT.jar Mark4CoffeeMaker
 
 To Test:
