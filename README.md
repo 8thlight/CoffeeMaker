@@ -9,6 +9,12 @@ Directions...
 1. Clone
 2. Implement a coffee maker
 
+To Run:
+mvn package
+java -cp target/CoffeeMaker-1.0-SNAPSHOT.jar Mark4CoffeeMaker
+
+To Test:
+mvn test
 
 Use Cases
 
@@ -24,4 +30,4 @@ Use Cases
 4. Pot is full, brew indicator light is turned on. Pressure valve is opened. Warmer turned on. Heater turned off.
 
 
-5. Pot is empty. Brew indicator light turns off. Warmer turned off.     
+5. Pot is empty. Brew indicator light turns off. Warmer turned off.
