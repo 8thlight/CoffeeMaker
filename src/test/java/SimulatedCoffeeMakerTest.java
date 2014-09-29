@@ -1,13 +1,19 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class SimulatedCoffeeMakerTest {
 
-    @Test
-    public void ItSetsWarmerPlateStatus() {
-        SimulatedCoffeeMaker maker = new SimulatedCoffeeMaker();
+    private SimulatedCoffeeMaker maker;
 
+    @Before
+    public void setUp() {
+        maker = new SimulatedCoffeeMaker();
+    }
+
+    @Test
+    public void itSetsWarmerPlateStatus() {
         maker.setWarmerPlateStatus(CoffeeMakerAPI.WARMER_ON);
         assertEquals(CoffeeMakerAPI.WARMER_ON, maker.getWarmerPlateStatus());
 
@@ -16,9 +22,7 @@ public class SimulatedCoffeeMakerTest {
     }
 
     @Test
-    public void ItSetsBoilerStatus() {
-        SimulatedCoffeeMaker maker = new SimulatedCoffeeMaker();
-
+    public void itSetsBoilerStatus() {
         maker.setBoilerStatus(CoffeeMakerAPI.BOILER_EMPTY);
         assertEquals(CoffeeMakerAPI.BOILER_EMPTY, maker.getBoilerStatus());
 
@@ -27,9 +31,7 @@ public class SimulatedCoffeeMakerTest {
     }
 
     @Test
-    public void ItSetsBrewButtonStatus() {
-        SimulatedCoffeeMaker maker = new SimulatedCoffeeMaker();
-
+    public void itSetsBrewButtonStatus() {
         maker.setBrewButtonStatus(CoffeeMakerAPI.BREW_BUTTON_PUSHED);
         assertEquals(CoffeeMakerAPI.BREW_BUTTON_PUSHED, maker.getBrewButtonStatus());
 
@@ -38,10 +40,7 @@ public class SimulatedCoffeeMakerTest {
     }
 
     @Test
-    public void ItSetsBoilerState()
-    {
-        SimulatedCoffeeMaker maker = new SimulatedCoffeeMaker();
-
+    public void itSetsBoilerState() {
         maker.setBoilerState(CoffeeMakerAPI.BOILER_ON);
         assertEquals(CoffeeMakerAPI.BOILER_ON, maker.getBoilerState());
 

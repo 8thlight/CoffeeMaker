@@ -1,15 +1,16 @@
-import static org.junit.Assert.*;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class CoffeeMakerServiceTest {
 
     @Test
-    public void ItReturnsACoffeeMakerAPI() {
+    public void itReturnsACoffeeMakerAPI() {
         SimulatedCoffeeMaker coffeeMaker = new SimulatedCoffeeMaker();
 
-        CoffeeMakerService.Set(coffeeMaker);
+        CoffeeMakerService.set(coffeeMaker);
 
-        CoffeeMakerAPI actualMaker = CoffeeMakerService.Get();
+        CoffeeMakerAPI actualMaker = CoffeeMakerService.get();
 
         assertSame(coffeeMaker, actualMaker);
     }
